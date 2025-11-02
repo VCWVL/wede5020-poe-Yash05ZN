@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FreshMart</title>
+
+    <!-- SEO Meta Tags -->
+   <meta name="description" content="FreshMart Supermarket offers affordable fresh produce, quality meats, and convenient online shopping. Visit us for great deals every day!">
+    <meta name="keywords" content="FreshMart, supermarket, groceries, fresh produce, online shopping, Checkers, food store, South Africa">
+    <meta name="author" content="FreshMart Supermarket">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.freshmart-supermarket.com/index.html">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="_images/FreshMartLogo.PNG" alt="FreshMart Logo"> 
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact-us.html" class="current">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Title and Introduction -->
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Reach out to us with any questions, comments, or feedback.</p>
+            
+            <!-- Contact Information Grid -->
+            <div class="contact-info">
+                <!-- Info Card: Address -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Address</h3>
+                    <p>Checkers Head Office<br>3rd Floor, Checkers House<br>69 President Street<br>Johannesburg, 2001</p>
+                </div>
+                <!-- Info Card: Phone -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>0860 022 222<br>Customer Service Hotline</p>
+                </div>
+                <!-- Info Card: Email -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>customer.services@checkers.co.za<br>We respond within 24 hours</p>
+                </div>
+                <!-- Info Card: Hours -->
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Hours</h3>
+                    <p>Monday-Friday: 8am-5pm<br>Saturday: 9am-1pm<br>Sunday: Closed</p>
+                </div>
+            </div>
+            
+            <!-- Contact Form Section -->
+            <div class="contact-form">  
+                <h3>Send us a Message</h3>
+                <div id="formStatus" class="form-status"></div>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required aria-describedby="nameError">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required aria-describedby="emailError">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required aria-describedby="subjectError">
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-describedby="messageError"></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+            
+            <!-- Store Locator Section -->
+            <h3>Find a Checkers Store</h3>
+            <div class="store-locator">
+                <!-- List of available stores -->
+                <div class="store-list">
+                    <div class="store-item selected" 
+                         data-name="Checkers Hyper Galleria"
+                         data-address="Shop G37, Galleria Mall, Corner Moss Kolnick Drive, Arbour Rd, eManzimtoti, 4126"
+                         data-directions-url="https://www.google.com/maps/search/?api=1&query=Checkers+Hyper+Galleria+Amanzimtoti"
+                         data-map-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.101162099499!2d30.89315231511625!3d-30.09139998186591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6f6a13537a591%3A0x3cdd1577a633d6e!2sCheckers%20Hyper%20Galleria!5e0!3m2!1sen!2sza!4v1672527000000">
+                        <h4>Checkers Hyper Galleria</h4>
+                        <p>Shop G37, Galleria Mall</p>
+                        <p>Corner Moss Kolnick Drive, Arbour Rd, eManzimtoti, 4126</p>
+                        <p>Hours: 8:00 - 20:00 (Mon-Sat), 9:00 - 17:00 (Sun)</p>
+                    </div>
+                    <div class="store-item"
+                         data-name="Checkers Scottburgh"
+                         data-address="92 William St, Scottburgh, 4180"
+                         data-directions-url="https://www.google.com/maps/search/?api=1&query=Checkers+Scottburgh"
+                         data-map-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.93747941544!2d30.7530863151083!3d-30.29594998178331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6f0a8e3a25555%3A0x733365a928920159!2sCheckers%20Scottburgh!5e0!3m2!1sen!2sza!4v1672527100000">
+                        <h4>Checkers Scottburgh</h4>
+                        <p>92 William St, Scottburgh, 4180</p>
+                        <p>Hours: 8:00 - 19:00 (Mon-Sat), 8:00 - 19:00 (Sun)</p>
+                    </div>
+                    <div class="store-item"
+                         data-name="Checkers Amanzimtoti"
+                         data-address="Seadoone Mall, 37 Seadoone Rd, eManzimtoti, 4126"
+                         data-directions-url="https://www.google.com/maps/search/?api=1&query=Checkers+Amanzimtoti"
+                         data-map-url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.731389849824!2d30.88883831511628!3d-30.07329998187211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6f69455555555%3A0x499e693b77759ef8!2sCheckers%20Amanzimtoti!5e0!3m2!1sen!2sza!4v1672527200000">
+                        <h4>Checkers Amanzimtoti</h4>
+                        <p> Seadoone Mall, 37 Seadoone Rd, eManzimtoti, 4126</p>
+                        <p>Hours: 8:00 - 20:00 (Mon-Sat), 8:00 - 20:00 (Sun)</p>
+                    </div> 
+                </div>
+                <!-- Map display area -->
+                <div class="store-map">
+                    <iframe id="googleMap" title="Location of selected Checkers store" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.101162099499!2d30.89315231511625!3d-30.09139998186591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef6f6a13537a591%3A0x3cdd1577a633d6e!2sCheckers%20Hyper%20Galleria!5e0!3m2!1sen!2sza!4v1672527000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="map-details">
+                        <h4 id="mapStoreName">Checkers Hyper Galleria</h4>
+                        <p id="mapStoreAddress">Shop G37, Galleria Mall, Corner Moss Kolnick Drive, Arbour Rd, eManzimtoti, 4126</p>
+                        <a id="mapDirectionsBtn" href="https://www.google.com/maps/search/?api=1&query=Checkers+Hyper+Galleria+Amanzimtoti" class="btn" target="_blank">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Checkers Sixty60</a></li>
+                        <li><a href="services.html">Xtra Savings</a></li>
+                        <li><a href="services.html">Online Shopping</a></li>
+                        <li><a href="services.html">Money Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                <ul>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="returns.html">Returns Policy</a></li>
+                    <li><a href="cookies.html">Cookie Policy</a></li>
+                </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Subscribe to our newsletter for the latest updates and special offers.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" required style="padding: 0.8rem; width: 100%; margin-bottom: 0.5rem; border-radius: 5px; border: 1px solid #ddd;">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/checkerssa/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/checkers_sa/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/checkerssa/with_replies" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/checkers/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="contact-methods" style="margin-top: 1rem;">
+                        <p><i class="fas fa-phone"></i> 0860 022 222</p>
+                        <p><i class="fas fa-envelope"></i> customer.services@checkers.co.za</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 FreshMart. All rights reserved. A division of Shoprite Holdings Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Centralized and Page-specific Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        // Wait for the DOM to be fully loaded before running scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Contact Form Validation and Submission ---
+            const contactForm = document.getElementById('contactForm');
+            const formStatus = document.getElementById('formStatus');
+            
+            // Ensure the contact form exists on the page
+            if (contactForm) {
+                // Add a submit event listener to the form
+                contactForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const isFormValid = validateForm();
+
+                    // If all fields are valid, proceed with submission
+                    if (isFormValid) {
+                        // Display a "sending" message to the user
+                        formStatus.textContent = 'Sending your message...';
+                        formStatus.className = 'form-status info';
+                        formStatus.style.display = 'block';
+                        
+                        // Simulate a network delay for submission
+                        setTimeout(function() {
+                            // Show a success message
+                            formStatus.textContent = 'Thank you for your message! We will get back to you soon.';
+                            formStatus.className = 'form-status success';
+                            contactForm.reset();
+                        }, 1500);
+                    }
+                });
+
+                // Add blur event listeners for real-time validation
+                document.getElementById('name').addEventListener('blur', () => validateField('name', 'Please enter your name'));
+                document.getElementById('email').addEventListener('blur', () => validateEmailField());
+                document.getElementById('subject').addEventListener('blur', () => validateField('subject', 'Please enter a subject'));
+                document.getElementById('message').addEventListener('blur', () => validateField('message', 'Please enter your message'));
+            }
+
+            function validateForm() {
+                clearErrors();
+                const isNameValid = validateField('name', 'Please enter your name');
+                const isEmailValid = validateEmailField();
+                const isSubjectValid = validateField('subject', 'Please enter a subject');
+                const isMessageValid = validateField('message', 'Please enter your message');
+                return isNameValid && isEmailValid && isSubjectValid && isMessageValid;
+            }
+
+            function validateField(fieldId, errorMessage) {
+                const field = document.getElementById(fieldId);
+                if (!field.value.trim()) {
+                    showError(fieldId, errorMessage);
+                    return false;
+                }
+                clearError(fieldId);
+                return true;
+            }
+
+            function validateEmailField() {
+                const emailField = document.getElementById('email');
+                if (!emailField.value.trim()) {
+                    showError('email', 'Please enter your email address');
+                    return false;
+                } else if (!isValidEmail(emailField.value)) {
+                    showError('email', 'Please enter a valid email address');
+                    return false;
+                }
+                clearError('email');
+                return true;
+            }
+            
+            // --- Store Locator Functionality ---
+            const storeItems = document.querySelectorAll('.store-item');
+            const mapIframe = document.getElementById('googleMap');
+            const mapStoreName = document.getElementById('mapStoreName');
+            const mapStoreAddress = document.getElementById('mapStoreAddress');
+            const mapDirectionsBtn = document.getElementById('mapDirectionsBtn');
+
+            // Ensure there are store items on the page
+            if (storeItems.length > 0 && mapIframe) {
+                // Add a click event listener to each store item
+                storeItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        // First, remove the 'selected' class from all store items
+                        storeItems.forEach(i => i.classList.remove('selected'));
+                        // Then, add the 'selected' class to the one that was clicked
+                        this.classList.add('selected');
+                        
+                        // Get the details from the data attributes of the selected store
+                        const storeName = this.dataset.name;
+                        const storeAddress = this.dataset.address;
+                        const directionsUrl = this.dataset.directionsUrl;
+                        const mapUrl = this.dataset.mapUrl;
+                        
+                        // Update the map details and "Get Directions" button
+                        mapStoreName.textContent = storeName;
+                        mapStoreAddress.textContent = storeAddress;
+                        mapDirectionsBtn.href = directionsUrl;
+                        mapIframe.src = mapUrl;
+                    });
+                });
+            }
+            
+            // --- Helper Functions for Form Validation ---
+            function showError(fieldId, message) {
+                const field = document.getElementById(fieldId);
+                const errorElement = document.getElementById(fieldId + 'Error');
+                if (errorElement) {
+                    errorElement.textContent = message;
+                    field.setAttribute('aria-invalid', 'true');
+                }
+            }
+
+            function clearError(fieldId) {
+                const field = document.getElementById(fieldId);
+                const errorElement = document.getElementById(fieldId + 'Error');
+                if (errorElement) {
+                    errorElement.textContent = '';
+                    field.setAttribute('aria-invalid', 'false');
+                }
+            }
+
+            function clearErrors() {
+                const errorElements = document.querySelectorAll('.error-message');
+                errorElements.forEach(el => el.textContent = '');
+
+                const invalidFields = document.querySelectorAll('[aria-invalid="true"]');
+                invalidFields.forEach(field => field.setAttribute('aria-invalid', 'false'));
+
+                if (formStatus) formStatus.style.display = 'none';
+            }
+            
+            function isValidEmail(email) {
+                // Uses a regular expression to validate the email format
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+        });
+    </script>
+</body>
+</html>

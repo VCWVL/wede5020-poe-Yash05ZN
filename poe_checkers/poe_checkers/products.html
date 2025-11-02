@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FreshMart</title>
+
+    <!-- SEO Meta Tags -->
+   <meta name="description" content="FreshMart Supermarket offers affordable fresh produce, quality meats, and convenient online shopping. Visit us for great deals every day!">
+    <meta name="keywords" content="FreshMart, supermarket, groceries, fresh produce, online shopping, Checkers, food store, South Africa">
+    <meta name="author" content="FreshMart Supermarket">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.freshmart-supermarket.com/index.html">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->  
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="_images/FreshMartLogo.PNG" alt="FreshMart Logo"> 
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html" class="current">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Page Title and Introduction -->
+            <h2>Our Products</h2>
+            <p>Discover our wide range of high-quality products, from fresh produce to household essentials. We're committed to providing you with the best selection at competitive prices.</p>
+            
+            <!-- Product Category Filter Buttons -->
+            <div class="categories">
+                <button class="category-btn active" data-category="all">All Products</button>
+                <button class="category-btn" data-category="fresh-produce">Fresh Produce</button>
+                <button class="category-btn" data-category="meat-poultry">Meat & Poultry</button>
+                <button class="category-btn" data-category="dairy-eggs">Dairy & Eggs</button>
+                <button class="category-btn" data-category="bakery">Bakery</button>
+                <button class="category-btn" data-category="frozen-foods">Frozen Foods</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+                <button class="category-btn" data-category="household">Household</button>
+                <button class="category-btn" data-category="snacks">Snacks & Confectionery</button>
+            </div>
+            
+            <!-- Grid for displaying products -->
+            <div class="products-grid">
+                <!-- Product Cards -->
+                <div class="product-card" data-category="fresh-produce">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80" alt="Fresh Vegetables" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Fresh Vegetables</h3>
+                        <p>Assorted fresh vegetables from local farms. Perfect for your daily meals.</p>
+                        <div class="product-price">From R15.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="meat-poultry">
+                    <img src="https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?auto=format&fit=crop&w=800&q=80" alt="Quality Meats" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Quality Meats</h3>
+                        <p>Premium cuts of beef, chicken, and pork. Sourced from trusted suppliers.</p>
+                        <div class="product-price">From R89.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="dairy-eggs">
+                    <img src="https://images.unsplash.com/photo-1559598467-f8b76c8155d0?auto=format&fit=crop&w=800&q=80" alt="Dairy Products" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Dairy Products</h3>
+                        <p>Fresh milk, cheese, yogurt, and butter from quality dairy farms.</p>
+                        <div class="product-price">From R24.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bakery">
+                    <img src="https://images.unsplash.com/photo-1568051243851-f9b136146e97?auto=format&fit=crop&w=800&q=80" alt="Bakery Goods" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Bakery Goods</h3>
+                        <p>Freshly baked bread, pastries, and cakes made daily in our bakeries.</p>
+                        <div class="product-price">From R19.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="frozen-foods">
+                    <img src="https://images.unsplash.com/photo-1576186726115-4d51596775d1?auto=format&fit=crop&w=800&q=80" alt="Frozen Foods" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Frozen Foods</h3>
+                        <p>Convenient frozen meals, vegetables, and desserts for easy preparation.</p>
+                        <div class="product-price">From R32.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="beverages">
+                    <img src="https://images.unsplash.com/photo-1534533983688-c7b8e13fd3b6?auto=format&fit=crop&w=800&q=80" alt="Beverages" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Beverages</h3>
+                        <p>Refreshing drinks including juices, soft drinks, and bottled water.</p>
+                        <div class="product-price">From R12.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="household">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Household Essentials" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Household Essentials</h3>
+                        <p>Cleaning supplies, toiletries, and other household necessities.</p>
+                        <div class="product-price">From R45.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="snacks">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80" alt="Snacks & Confectionery" class="product-img" onclick="openLightbox(this)">
+                    <div class="product-content">
+                        <h3>Snacks & Confectionery</h3>
+                        <p>Delicious snacks, chocolates, and sweets for every taste.</p>
+                        <div class="product-price">From R18.99</div>
+                        <a href="enquiry.html" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section (added from enquiry page for consistency) -->
+            <div style="margin-top: 3rem;">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq">
+                    <div class="faq-item active">
+                        <h4 class="faq-question">
+                            How do I place an order for delivery?
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p>You can place an order for delivery through our Checkers Sixty60 app, available on iOS and Android.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            What are your delivery hours?
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p>We deliver from 8:00 AM to 8:00 PM, seven days a week.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4 class="faq-question">
+                            How can I join the Xtra Savings program?
+                            <i class="fas fa-chevron-down"></i>
+                        </h4>
+                        <p>You can join the Xtra Savings program by visiting any Checkers store or registering online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Checkers Sixty60</a></li>
+                        <li><a href="services.html">Xtra Savings</a></li>
+                        <li><a href="services.html">Online Shopping</a></li>
+                        <li><a href="services.html">Money Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="returns.html">Returns Policy</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <p>Subscribe to our newsletter for the latest updates and special offers.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" required style="padding: 0.8rem; width: 100%; margin-bottom: 0.5rem; border-radius: 5px; border: 1px solid #ddd;">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/checkerssa/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/checkers_sa/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/checkerssa/with_replies" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/checkers/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 FreshMart. All rights reserved. A division of Shoprite Holdings Ltd.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+        <span class="lightbox-close" onclick="document.getElementById('lightbox').style.display='none'">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Enlarged product image">
+        </div>
+    </div>
+
+
+    <!-- Page-specific Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // --- Mobile Menu Toggle ---
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mainNav = document.getElementById('mainNav');
+            mobileMenuBtn.addEventListener('click', function() {
+                mainNav.classList.toggle('show');
+            });
+
+            // --- Search Functionality ---
+            const searchForm = document.getElementById('searchForm');
+            const searchInput = document.getElementById('searchInput');
+            if (searchForm && searchInput) {
+                const handleSearch = (event) => {
+                    event.preventDefault();
+                    const searchTerm = searchInput.value.toLowerCase().trim();
+                    const productCards = document.querySelectorAll('.product-card');
+
+                    productCards.forEach(card => {
+                        const title = card.querySelector('h3').textContent.toLowerCase();
+                        const description = card.querySelector('p').textContent.toLowerCase();
+                        const isVisible = title.includes(searchTerm) || description.includes(searchTerm);
+                        card.style.display = isVisible ? 'block' : 'none';
+                    });
+                };
+                searchForm.addEventListener('submit', handleSearch);
+                searchInput.addEventListener('input', handleSearch); // Live search
+            }
+
+            // --- Product Category Filter ---
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            if (categoryButtons.length > 0 && productCards.length > 0) {
+                categoryButtons.forEach(button => {
+                    button.addEventListener('click', function() {
+                        categoryButtons.forEach(btn => btn.classList.remove('active'));
+                        this.classList.add('active');
+                        const selectedCategory = this.dataset.category;
+                        productCards.forEach(card => {
+                            card.style.display = (selectedCategory === 'all' || selectedCategory === card.dataset.category) ? 'block' : 'none';
+                        });
+                    });
+                });
+            }
+
+            // --- FAQ Accordion Functionality ---
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const wasActive = item.classList.contains('active');
+                        faqItems.forEach(i => i.classList.remove('active'));
+                        if (!wasActive) item.classList.add('active');
+                    });
+                }
+            });
+
+        });
+
+        // --- Lightbox Gallery ---
+        function openLightbox(img) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            if (lightbox && lightboxImg) {
+                lightbox.style.display = "flex";
+                lightboxImg.src = img.src;
+            }
+        };
+    </script>
+</body>
+</html>
