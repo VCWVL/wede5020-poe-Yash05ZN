@@ -34,5 +34,6 @@ FreshMart is a responsive grocery website that showcases fresh produce, includes
 ---
 
 ### 📚 References
--Checkers. 2024. About Us. [online] Available at: https://www.checkers.co.za/ about [Accessed 31 October 2025].
--W3Schools. 2025 . JavaScript. [online] Avalible at: https://www.w3schools.com/js/  about [Accessed 31 October 2025].
+- Checkers. 2024. About Us. [online] Available at: https://www.checkers.co.za/ about [Accessed 31 October 2025].
+- W3Schools. 2025 . JavaScript. [online] Avalible at: https://www.w3schools.com/js/  about [Accessed 31 October 2025].
+- W3Schools. 2025 . CSS. [online] Avalible at: https://www.w3schools.com/css/css_website_layout.asp/ about [Accessed 31 October 2025].
